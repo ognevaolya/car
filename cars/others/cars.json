@@ -1,0 +1,17 @@
+[
+	{
+		"number": 1,
+		"id": "bmw-x1",
+		"imageUrl" : "img/bmw-x1.jpg",
+		"name": "BMW-X1",
+		"information": "The X1's turbo four-cylinder (228 horsepower, 258 pounds-feet of torque) has adequate power for just about all situations, but noticeable — and inconsistent — accelerator lag hampers things from a standstill. Still, once you get past the initial gremlins, power comes early and stays late, and the standard eight-speed automatic transmission finds the right gear without too much delay."
+	},
+	{
+		"number": 2,
+		"id": "ford-escape",
+		"imageUrl" : "img/ford-escape.jpg",
+		"name": "Ford Escape",
+		"information": "A trio of engines are available, and I found the optional turbocharged 2.0-liter four-cylinder in my test SE model to be just right. With 231 horsepower, it's the most robust engine in the stable, providing quick, smooth takeoffs and not a hint of turbo lag. The Escape's six-speed automatic aptly delivers power on demand for strain-free highway passing and hill climbs."
+	}
+
+]

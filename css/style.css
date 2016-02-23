@@ -1,0 +1,54 @@
+body {
+	font: 300 16px/25px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 5% 5%;
+}
+
+.pic img {
+	height: 260px;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+.pic {
+	display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+
+.pic:hover::after {
+	display: inline-block;
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; bottom: 15px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: black; /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: "Open Sans"; /* Гарнитура шрифта */
+    font-size: 15px; /* Размер текста подсказки */
+    border: 1px solid #333; /* Параметры рамки */
+}
+
+.footer {
+	   padding: 10;
+}
+
+.left {
+	display: inline-block;
+	float: left;
+}
+
+.right {
+	display: inline-block;
+	float: right;
+}
+
+div.c-wrapper{
+    width: 65%; /* for example */
+    margin: auto;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; /* use this, or not */
+margin: auto;
+}
