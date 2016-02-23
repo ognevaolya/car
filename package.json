@@ -1,11 +1,23 @@
 {
   "name": "car",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "angular-route": "^1.5.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ognevaolya/car.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ognevaolya/car/issues"
+  },
+  "homepage": "https://github.com/ognevaolya/car#readme",
+  "description": ""
 }
