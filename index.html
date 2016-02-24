@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="index">
     <head>
         <meta charset="utf-8">
         <title>Car</title>
@@ -10,7 +10,7 @@
     	<link href="css/style.css" rel="stylesheet">
 	</head>
 
-	<body ng-controller="mySecApp">
+	<body ng-controller="indexCtrl">
         <header>
             <!-- навигация -->
             <div class="navbar navbar-inverse navbar-fixed-top">
@@ -29,13 +29,13 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#/home">About Us</a></li>
                             <li><a href="#/contact">Contact Us</a></li>
-                            <li><a href="#/aboutCar.html">About Car</a></li>
+                            <li><a href="#/aboutCar">About Car</a></li>
                         </ul>
                     </div> <!-- collapse navbar-collapse -->
                 </div> <!-- container -->
             </div> <!-- navbar navbar-inverse navbar-fixed-top -->
         </header>
-        <ng-view></ng-view>
+        
         <div class="c-wrapper">
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <!-- Индикаторы слайдов -->
@@ -89,6 +89,8 @@
             </div>
         </div>
 
+    <ng-view></ng-view>
+        
         <footer> 
             <div class="container">
                 <hr>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="home">
     <head>
         <meta charset="utf-8">
         <title>Car</title>
@@ -10,7 +10,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body ng-controller="myCtrl">
+    <body ng-controller="HomeCtrl">
         <header>
             <!-- навигация -->
             <div class="navbar navbar-inverse navbar-fixed-top">
@@ -40,24 +40,27 @@
             <hr>
             <p>With an average of more than 31 million visits each month, Cars.com is the leading online destination for car shoppers and owners. We offer credible and easy-to-understand information to help consumers research, price and find new and used vehicles and quality service and repair providers.</p>
             <p>Through unbiased editorial content, vehicle listings, dealer reviews, side-by-side comparison options, build and price tools, photo galleries and videos, Cars.com gives drivers the information they need to make confident decisions. Launched in June 1998, Cars.com is owned by <a href="http://www.tegna.com/">TEGNA Inc</a>. and operates <a href="http://www.auto.com/">Auto.com</a>, <a href="http://www.newcars.com/">NewCars.com®</a> and <a href="http://www.pickuptrucks.com/">PickupTrucks.com™</a>.</p> 
-            <hr>
         </div> <!-- container -->
 
         <div class="container">
-            <div class="right">
-                <h3 class="text-center">Filter</h3>
-                <div class="text-center">
-                    <form>
-                        <input type="text" class="form-controll" placeholder=" Search..." ng-model="search">
-                    </form>
-                </div>         
-            </div> <!-- right -->
-            <div class="picture" ng-repeat="car in cars | filter:search">
-                <div class="pic" data-title="{{ car.name }}">
-                    <a href="#/cars/{{car.id}}" role="button"><img ng-src="{{ car.imageUrl }}"></a>
+            <h3 class="text-center">Filter</h3>
+            <div class="text-center">
+                <form>
+                    <input type="text" class="form-controll" placeholder=" Search..." ng-model="search">
+                </form>
+            </div> 
+            <hr> 
+        </div> <!-- container --> 
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="car in cars | filter:search">
+                    <div class="preview-img text-center pic" data-title="{{ car.name }}">
+                        <a href="#/cars/{{car.id}}" role="button"><img ng-src="{{ car.imageUrl }}"></a>
+                    </div>
                 </div> <!-- pic --> 
-            </div>  <!-- picture -->
-        </div> <!-- container -->
+            </div>
+        </div> <!-- container --> 
 
         <footer> 
             <div class="container">
@@ -81,7 +84,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/controllers.js"></script>
     </body>

@@ -7,17 +7,18 @@ body {
 	height: 260px;
 	margin-top: 15px;
 	padding-bottom: 15px;
+    display: inline-block;
 }
 
 .pic {
 	display: inline-block; /* Строчно-блочный элемент */
-    position: relative; /* Относительное позиционирование */
+    position: relative;  /* Относительное позиционирование */
 }
 
 .pic:hover::after {
 	display: inline-block;
     content: attr(data-title); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
+    position: absolute;  /* Абсолютное позиционирование */
     left: 0; right: 0; bottom: 15px; /* Положение подсказки */
     z-index: 1; /* Отображаем подсказку поверх других элементов */
     background: black; /* Полупрозрачный цвет фона */
