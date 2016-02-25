@@ -29,10 +29,6 @@ body {
     border: 1px solid #333; /* Параметры рамки */
 }
 
-.footer {
-	   padding: 10;
-}
-
 .left {
 	display: inline-block;
 	float: left;
@@ -43,13 +39,18 @@ body {
 	float: right;
 }
 
-div.c-wrapper{
-    width: 65%; /* for example */
-    margin: auto;
+.car-images {
+  text-align: center;
+}
+.car-images img {
+  max-width: 100%;
 }
 
-.carousel-inner > .item > img, 
-.carousel-inner > .item > a > img{
-width: 100%; /* use this, or not */
-margin: auto;
+.car-thumbs li {
+  float: left;
+  width: 30%;
+  padding:16px;
+}
+.car-thumbs li img {
+  max-width: 100%;
 }

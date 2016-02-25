@@ -1,97 +1,27 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="contact">
-    <head>
-	    <meta charset="utf-8">
-	    <title>Contact</title>
-	    
-	    <!-- Bootstrap -->
-	    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link href="css/style.css" rel="stylesheet">
-	</head>
-
-	<body ng-controller="ContactCtrl">
-		<header>
-            <!-- навигация -->
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container" >
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-                            <span class="sr-only">Open Navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><i class="fa fa-home fa-fw">&nbsp;</i></a>
-                    </div> <!-- navbar-header -->
-
-                    <div class="collapse navbar-collapse" id="responsive-menu">
-                        <ul class="nav navbar-nav">
-                            <li><a href="home.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="aboutCar.html">About Car</a></li>
-                        </ul>
-                    </div> <!-- collapse navbar-collapse -->
-                </div> <!-- container -->
-            </div> <!-- navbar navbar-inverse navbar-fixed-top -->
-        </header>
-
-		<div class="container">
-			<h1>Contact Page</h1>
-			<hr>
-		    <div class="row">
-		        <div class="left col-xs-12 col-sm-3 col-md-4 col-lg-4">
-		        	<form>
-						<div class="form-group">
-					    	<label for="exampleInputEmail1">Email address</label>
-					    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-					    </div>
-					    <div class="form-group">
-					    	<label for="exampleInputPassword1">Password</label>
-					    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-					    </div>
-					  	<div class="checkbox ">
-					    	<div>Write a message</div>
-					    	<textarea class="form-control" id="message" rows="3"></textarea>	
-					  		<label><input type="checkbox"> Check me out</label><br>
-					  		<button type="submit" class="btn btn-primary">Send</button>
-					  	</div>
-					  	
-					</form>
-		        </div> 	
-				<div class="right">
-					<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7143924902066!2d-87.63537878498185!3d41.87749097343211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbdd7241847%3A0x37b8f23411d1f5b2!2s175+W+Jackson+Blvd%2C+Chicago%2C+IL+60606%2C+USA!5e0!3m2!1sen!2sua!4v1455893049525" width="540" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-	  			</div>
-	  		</div>
-		</div>
-	<footer> 
-            <div class="container">
-            <hr>
-                <div class="footer">
-                    <div class="left">
-                        <a href="#">Privacy</a>
-                    </div> <!-- left -->
-                    <div class="right">
-                    	<div class="btn-toolbar">
-                   			<div class="btn-group btn-group-lg"> <!-- группировка кнопок -->
-		                        <a href="#" class="btn responsive"><i class="fa fa-facebook-official"></i></a>
-		                        <a href="#" class="btn responsive"><i class="fa fa-twitter"></i></a>
-		                        <a href="#" class="btn responsive"><i class="fa fa-youtube"></i></a>
-		                    </div>
-		                </div>
-                    </div> <!-- right -->
-                </div> <!-- footer -->
-            </div> <!-- container -->
-        </footer>
-
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
-	    <script src="bower_components/angular/angular.js"></script>
-	    <script src="bower_components/angular-route/angular-route.js"></script>
-	    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	    <script src="js/controllers.js"></script>
-	</body>
-
-</html>
-
+<div class="container">
+	<h1>Contact Page</h1>
+    <div class="row">
+    	<hr>
+        <div class="left col-xs-12 col-sm-3 col-md-4 col-lg-4">
+        	<form>
+				<div class="form-group">
+			    	<label for="exampleInputEmail1">Email address</label>
+			    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			    </div> <!-- form-group -->
+			    <div class="form-group">
+			    	<label for="exampleInputPassword1">Password</label>
+			    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			    </div> <!-- form-group -->
+			  	<div class="checkbox ">
+			    	<div>Write a message</div>
+			    	<textarea class="form-control" id="message" rows="3"></textarea>	
+			  		<label><input type="checkbox"> Check me out</label><br>
+			  		<button type="submit" class="btn btn-primary">Send</button>
+			  	</div> <!-- checkbox -->
+			</form>
+        </div> <!-- left col-xs-12 col-sm-3 col-md-4 col-lg-4 -->
+		<div class="right">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7143924902066!2d-87.63537878498185!3d41.87749097343211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbdd7241847%3A0x37b8f23411d1f5b2!2s175+W+Jackson+Blvd%2C+Chicago%2C+IL+60606%2C+USA!5e0!3m2!1sen!2sua!4v1455893049525" width="520" height="370" style="border:0"></iframe>
+		</div> <!-- right -->
+	</div> <!-- row -->
+</div> <!-- container -->
