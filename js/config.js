@@ -30,6 +30,11 @@
 				templateUrl:'/template/registration.html',
 				controller:'RegistrationCtrl'
 			})
+			.state('privacy', {
+				url: "/privacy",
+				templateUrl:'/privacy.html',
+				controller:'PrivacyCtrl'
+			})
 			.state('login', {
 				url: "/login",
 				templateUrl:'/template/login.html',

@@ -64,3 +64,7 @@ body {
 .error-container .error {
     color: #D11C26!important;
 }
+.required:after {
+  content: '*';
+  color: red;
+}

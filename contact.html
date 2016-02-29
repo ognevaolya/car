@@ -5,7 +5,7 @@
         <div class="left col-xs-12 col-sm-3 col-md-4 col-lg-4">
         	<form name="Form.contact" ng-submit="contact()">
 				<div class="form-group">
-			    	<label for="inputEmail">Email address</label>
+			    	<label for="inputEmail" class="required">Email address</label>
 			    	<input type="email" name="email" ng-model="contactData.email" class="form-control validate-err" placeholder="E-mail" required>
 			    	<div class="error-container" ng-show="Form.contact.email.$dirty &amp;&amp; Form.contact.email.$invalid" role="alert">
                     	<small class="error ng-hide" ng-show="Form.contact.email.$error.required">This field is required</small>
@@ -13,14 +13,14 @@
                 	</div>
 			    </div> <!-- form-group -->
 			    <div class="form-group">
-			    	<label for="inputPassword">Full Name</label>
-			    	<input type="text" name="fullName" ng-model="contactData.fullName" class="form-control validate-err" placeholder="Text" required>
+			    	<label for="inputPassword" class="required">Full Name</label>
+			    	<input type="text" name="fullName" ng-model="contactData.fullName" class="form-control validate-err" placeholder="Name" required>
 			    	<div class="error-container" ng-show="Form.contact.fullName.$dirty &amp;&amp; Form.contact.fullName.$invalid" role="alert">
                     	<small class="error" ng-show="Form.contact.fullName.$error.required">This field is required</small>
                 	</div>
 			    </div> <!-- form-group -->
 			  	<div class="checkbox ">
-			    	<div><b>Write a message</b></div>
+			    	<div class="required"><b>Write a message</b></div>
 			    	<textarea class="form-control validate-err" name="message" id="message" rows="3" ng-model="contactData.message" required></textarea>
 			    	<div class="error-container" ng-show="Form.contact.message.$dirty &amp;&amp; Form.contact.message.$invalid" role="alert">
                     	<small class="error" ng-show="Form.contact.message.$error.required">This field is required</small>
