@@ -5,6 +5,7 @@
 		$scope.loginData = {};
 		$scope.submit = function() {
 			RESTservice.login($scope.loginData);
+			console.log($scope.loginData);
 		}
 	}]);
 }())

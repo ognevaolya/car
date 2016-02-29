@@ -3,20 +3,29 @@
     <div class="row">
     	<hr>
         <div class="left col-xs-12 col-sm-3 col-md-4 col-lg-4">
-        	<form>
+        	<form name="Form.contact" ng-submit="contact()">
 				<div class="form-group">
-			    	<label for="exampleInputEmail1">Email address</label>
-			    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			    	<label for="inputEmail">Email address</label>
+			    	<input type="email" name="email" ng-model="contactData.email" class="form-control validate-err" placeholder="E-mail" required>
+			    	<div class="error-container" ng-show="Form.contact.email.$dirty &amp;&amp; Form.contact.email.$invalid" role="alert">
+                    	<small class="error ng-hide" ng-show="Form.contact.email.$error.required">This field is required</small>
+                    	<small class="error" ng-show="Form.contact.email.$dirty &amp;&amp; Form.contact.email.$error.email">This field must be a valid email address</small>
+                	</div>
 			    </div> <!-- form-group -->
 			    <div class="form-group">
-			    	<label for="exampleInputPassword1">Password</label>
-			    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			    	<label for="inputPassword">Full Name</label>
+			    	<input type="text" name="fullName" ng-model="contactData.fullName" class="form-control validate-err" placeholder="Text" required>
+			    	<div class="error-container" ng-show="Form.contact.fullName.$dirty &amp;&amp; Form.contact.fullName.$invalid" role="alert">
+                    	<small class="error" ng-show="Form.contact.fullName.$error.required">This field is required</small>
+                	</div>
 			    </div> <!-- form-group -->
 			  	<div class="checkbox ">
-			    	<div>Write a message</div>
-			    	<textarea class="form-control" id="message" rows="3"></textarea>	
-			  		<label><input type="checkbox"> Check me out</label><br>
-			  		<button type="submit" class="btn btn-primary">Send</button>
+			    	<div><b>Write a message</b></div>
+			    	<textarea class="form-control validate-err" name="message" id="message" rows="3" ng-model="contactData.message" required></textarea>
+			    	<div class="error-container" ng-show="Form.contact.message.$dirty &amp;&amp; Form.contact.message.$invalid" role="alert">
+                    	<small class="error" ng-show="Form.contact.message.$error.required">This field is required</small>
+                	</div><br>
+			  		<button type="submit" ng-disabled="Form.contact.$invalid" class="btn btn-primary">Send</button>
 			  	</div> <!-- checkbox -->
 			</form>
         </div> <!-- left col-xs-12 col-sm-3 col-md-4 col-lg-4 -->
