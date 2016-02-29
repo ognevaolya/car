@@ -1,4 +1,6 @@
 {
+	"name": "Jaguar-XF",
+	"id": "jaguar-xf",
 	"includes" : [ 
 		"Redesigned for 2016",
 		"All-new aluminum construction",
@@ -7,10 +9,14 @@
 		"Rear-or-all-wheel drive",
 		"Up to 265 pounds lighter"
 	],
-	
 	"images": [
         "img/cars/jaguar-xf-1.jpg", 
         "img/cars/jaguar-xf-2.jpg"
     ],
-	"Drives": "A trio of engines are available, and I found the optional turbocharged 2.0-liter four-cylinder in my test SE model to be just right. With 231 horsepower, it's the most robust engine in the stable, providing quick, smooth takeoffs and not a hint of turbo lag. The Escape's six-speed automatic aptly delivers power on demand for strain-free highway passing and hill climbs."
+    "transmissions" : "8-speed automatic w/OD and auto-manual",
+    "availableEngines:" : [
+    	"340-hp, 3.0-liter V-6 (premium)", 
+    	"380-hp, 3.0-liter V-6 (premium)"
+    ],
+	"information": "A trio of engines are available, and I found the optional turbocharged 2.0-liter four-cylinder in my test SE model to be just right. With 231 horsepower, it's the most robust engine in the stable, providing quick, smooth takeoffs and not a hint of turbo lag. The Escape's six-speed automatic aptly delivers power on demand for strain-free highway passing and hill climbs."
 }

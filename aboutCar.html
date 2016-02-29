@@ -3,13 +3,15 @@
     <div class="row">
         <hr>
         <div class="col-xs-12 col-sm-8 col-md-6">
-            <input type="text" ng-model="query">
-            <ul>
-                <li ng-repeat="car in cars | filter:{name:query}">
-                    <span>{{car.name}}</span>
-                    <p>{{car.information}}</p>
-                </li>
-            </ul>
+            <form>
+                <input type="text" class="form-controll" placeholder=" Search..." ng-model="search">
+                <ul><br>
+                    <li ng-repeat="car in cars | filter:search">
+                        <span>{{car.name}}</span>
+                        <p>{{car.information}}</p>
+                    </li>
+                </ul>
+            </form>
         </div>
     </div>
 </div>

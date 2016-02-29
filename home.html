@@ -7,17 +7,16 @@
 
         <h3 class="text-center">Filter</h3>
         <div class="text-center">
-            <form>
-                <input type="text" class="form-controll" placeholder=" Search..." ng-model="search">
-            </form>
+            <input type="text" placeholder=" Name..." ng-model="query">
+            
         </div> 
         <hr> 
     </div> <!-- row --> 
 
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="car in cars | filter:search">
+        <div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="car in cars | filter:{name:query}">
             <div class="preview-img text-center pic" data-title="{{ car.name }}">
-                <a href="#/cars/{{car.id}}" role="button"><img ng-src="{{ car.imageUrl }}"></a>
+                <a ui-sref="car({carId: car.id})" role="button"><img ng-src="{{car.imageUrl}}"></a>
             </div>
         </div> <!-- pic --> 
     </div>

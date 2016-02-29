@@ -1,14 +1,21 @@
 {
+	"name": "BMW-X1",
+	"id": "bmw-x1",
 	"includes" : [
-		"FUEL ECONOMY 22/32 mpg"
-		"8-speed Shiftable Automatic"
-		"BASIC WARRANTY 4 Yr./ 50000 Mi."
-		"BLUETOOTH"
+		"FUEL ECONOMY 22/32 mpg",
+		"8-speed Shiftable Automatic",
+		"BASIC WARRANTY 4 Yr./ 50000 Mi.",
+		"BLUETOOTH",
 		"HEATED SEATS"
 	],
 	"images": [
         "img/cars/bmw-x1-1.jpg", 
         "img/cars/bmw-x1-2.jpg"
     ], 
-	"Drives" : "The X1's turbo four-cylinder (228 horsepower, 258 pounds-feet of torque) has adequate power for just about all situations, but noticeable — and inconsistent — accelerator lag hampers things from a standstill. Still, once you get past the initial gremlins, power comes early and stays late, and the standard eight-speed automatic transmission finds the right gear without too much delay."
+    "transmissions" : "8-speed automatic w/OD and auto-manual",
+    "availableEngines:" : [
+    	"340-hp, 3.0-liter V-6 (premium)", 
+    	"380-hp, 3.0-liter V-6 (premium)"
+    ],
+	"information" : "The X1's turbo four-cylinder (228 horsepower, 258 pounds-feet of torque) has adequate power for just about all situations, but noticeable — and inconsistent — accelerator lag hampers things from a standstill. Still, once you get past the initial gremlins, power comes early and stays late, and the standard eight-speed automatic transmission finds the right gear without too much delay."
 }

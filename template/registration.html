@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>Registration</h1>
+    <hr>
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+        <form name="Form.registration" ng-submit="registration()">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Second Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" ng-model="loginData.email" class="form-control validate-err" placeholder="E-mail" required>
+                <div class="error-container" ng-show="Form.registration.email.$dirty &amp;&amp; Form.registration.email.$invalid" role="alert">
+                    <small class="error ng-hide" ng-show="registration.email.$error.required">This field is required</small>
+                    <small class="error" ng-show="Form.registration.email.$dirty &amp;&amp; Form.registration.email.$error.email">This field must be a valid email address</small>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password1" ng-model="loginData.password1" class="form-control validate-err" placeholder="Password" required>
+                <div class="error-container" ng-show="Form.registration.password1.$dirty &amp;&amp; Form.registration.password1.$invalid" role="alert">
+                    <small class="error ng-hide" ng-show="Form.registration.password1.$error.required">This field is required</small>
+                    <small class="error" ng-show="Form.registration.password1.$dirty &amp;&amp; Form.registration.password1.$error.password1">This field must be a valid email address</small>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="password" name="passwords2" equals="{{loginData.password1}}" ng-model="loginData.passwords2" class="form-control validate-err" placeholder="Confirm Password" required>
+                <div class="error-container" ng-show="Form.registration.passwords2.$dirty &amp;&amp; Form.registration.passwords2.$invalid" role="alert">
+                    <small class="error" ng-show="!Form.registration.passwords2.$error.required && Form.registration.passwords2.$error.equals">Passwords are not equals</small>
+                    <small class="error" ng-show="Form.registration.passwords2.$dirty &amp;&amp; Form.registration.passwords2.$error.passwords2">This field is required</small>
+                </div>
+            </div>
+            <div>
+                <button type="button" ng-disabled="Form.registration.$invalid" class="btn btn-primary pull-right">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</div>  <!-- container -->

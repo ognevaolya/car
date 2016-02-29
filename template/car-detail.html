@@ -14,14 +14,31 @@
         </div> <!-- col-xs-12 col-sm-4 -->
         <div class="col-xs-12 col-sm-8">
             <h1>{{ car.name }}</h1>
-          <p>{{ car.includes }}</p>
+              <p>{{ car.includes.join(', ') }}</p>
           <hr>
-          <ul class="specs list-unstyled">
+          <ul class="list-unstyled">
               <li>
-                  <span>Availability</span>
+                  <span>Drives</span>
                   <dl>
-                      <dt>Drives</dt>
-                      <dd ng-repeat="Drives in carId.Drives">{{Drives}}</dd>
+                      <dt>Information</dt>
+                      <dd >{{ car.information }}</dd>
+                  </dl>
+              </li>
+              <li>
+                  <span>Transmissions</span>
+                  <dl>
+                      <dt>Transmissions</dt>
+                      <dd>{{ car.transmissions }}</dd>
+                  </dl>
+              </li>
+              <li>
+                  <span>Available Engines</span>
+                  <dl>
+                      <dt>Available Engines</dt>
+                      <p>
+                        <dd>{{ car.availableEngines }}</dd>
+                      </p>
+                      
                   </dl>
               </li>
           </ul>
